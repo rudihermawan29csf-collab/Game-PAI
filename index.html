@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jejak Umayyah: Petualangan Waktu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Fredoka', sans-serif;
+        background-color: #222;
+        color: #fff;
+        overflow: hidden; /* Prevent body scroll, game handles it */
+      }
+      /* Game UI Utilities */
+      .text-shadow {
+        text-shadow: 2px 2px 0px #000;
+      }
+      .text-shadow-lg {
+        text-shadow: 4px 4px 0px #000;
+      }
+      /* Custom scrollbar for game chat */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      .glass-panel {
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.559.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.32.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
